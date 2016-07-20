@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Page</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	a {
+		display: block;
+		text-decoration: none;
+		font-family: "Arial", sans-serif;
+		font-weight: bold;
+		padding: 5px;
+	}
+	</style>
+
+</head>
+
+<body bgcolor="#95FFC1">
+	<a href="../Task_1;/task1.html">Задача 1;</a>
+	<a href="../Task_2;/task2.html">Задача 2;</a>
+	<a href="../Task_3;/task3.html">Задача 3;</a>
+	<a href="http://artapp.pro">ArtApp.pro</a>
+	<a href="http://fb.com" target="_blank">Facebook [В новой вкладке]</a>
+	<a id="link" href="http://vk.com">VK [В новом <u>окне</u>]</a>
+
+<!-- скрипт с http://javascript.ru/forum/dom-window/35673-otkryt-ssylku-v-novom-okne-ne-putat-s-vkladkojj.html, мной изменено только ИД в getElementById и размеры окна-->
+
+	<script>
+	var link = document.getElementById('link')
+	link.setAttribute("onclick","popupWin = window.open(this.href,'contacts','location,width=750,height=500,top=0'); popupWin.focus(); return false")
+	</script>
+</body>
+
+</html>
